@@ -1,0 +1,219 @@
+
+<section class="saludo">
+<h1>{{title}}</h1>
+        {{#if conocido}}
+        <p class="hola">Hola {{nombre}} <a class="salir" href="/salir">salir</a></p>
+        {{/if}}
+
+    {{#unless conocido}}
+   <p class="bienvenido">Bienvenido</p>
+<form class="ingresar" action="/ingresar" method="post">
+<input type="text" name="nombre"><button>ingresar</button>
+</form>
+    {{/unless}}
+
+</section>
+
+
+<div id="" class="conteiner-fluid hero"></div>
+<!--
+        <div id="home" class="row align-items-center hero">
+            <figure class="notificacion">
+                <div class="notificacion-body">
+                    Hola! me llamo Axel Gaston Sequeira, soy desarrollador web front-end developer. Realice un curso en la academia Corderhouse y me encuentro cursando actualmente en la UTN.
+                    <img src="./img/imgperfil.jpg" alt="hand" title="saludo" class="hand_icon">
+                </div>
+            </div>
+            -->
+<div>
+    <button class="boton">
+        <span class="botontext">Descargar CV</span>
+        <img class="imgdescarga" src="./images/download-icon.ico" width="20px" height="20px" alt="">
+    </button>
+</div>
+
+</figure>
+</div>
+
+<!--SNACKBAR-->
+
+
+
+
+<!--SKILLS-->
+<center>
+    <div>
+        <h2 class="textskills" id="skills">SKILLS</h2>
+    </div>
+
+    <article class="cards-skills">
+        <div class="card_inner">
+            <div class="card_side card_side--front">
+                <div class="card_image-wrapper">
+                    <img class="card_image" src="./images/html.png" alt="">
+                </div>
+                <div class="card_body card_body-flex">
+                    <h2 class="card_title"></h2>
+                    <span class="card_arrow"></span>
+                </div>
+            </div>
+            <div class="card_side card_side--back">
+                <div class="card_body">
+                    <ol>
+                        <li>Estructura basica de un documento</li>
+                        <li>Etiquetas Semanticas</li>
+                        <li>Etiquetas Multimedia</li>
+                        <li>Formularios</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="cards-skills">
+        <div class="card_inner">
+            <div class="card_side card_side--front">
+                <div class="card_image-wrapper">
+                    <img class="card_image" src="./images/css.png" alt="">
+                </div>
+                <div class="card_body card_body-flex">
+                    <h2 class="card_title"></h2>
+                    <span class="card_arrow"></span>
+                </div>
+            </div>
+            <div class="card_side card_side--back">
+                <div class="card_body">
+                    <ol>
+                        <li>Estructura</li>
+                        <li>Selectores</li>
+                        <li>Posicionamiento</li>
+                        <li>Flexbox</li>
+                        <li>GRID</li>
+                        <li>Animaciones y transiciones</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="cards-skills">
+        <div class="card_inner">
+            <div class="card_side card_side--front">
+                <div class="card_image-wrapper">
+                    <img class="card_image" src="./images/js.png" alt="">
+                </div>
+                <div class="card_body card_body-flex">
+                    <h2 class="card_title"></h2>
+                    <span class="card_arrow"></span>
+                </div>
+            </div>
+            <div class="card_side card_side--back">
+                <div class="card_body">
+                    <ol>
+                        <li>Variables</li>
+                        <li>Estructuras de Control</li>
+                        <li>Bucles</li>
+                        <li>DOM</li>
+                        <li>Eventos</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+</center>
+
+<!--SKILLS-->
+
+<!--titulos-->
+
+<!--titulos-->
+
+<!--Formulario-->
+
+<section id="contactos" class="container container-contact">
+    <div class="row">
+        <div class="col-12 col-md-6 form-left d-flex align-content-center ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-7 m-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-titlewp">Whats App</h5>
+                            <p class="card-textform">3794096164</p>
+                            <a href="#" class="btn btn-primary">Enviar Mensaje</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 m-4 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-titlemail">Correo Electronico</h5>
+                            <p class="card-textform">axel10bbch@gmail.com</p>
+                            <a href="#" class="btn btn-primary">Enviar mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-right">
+            <form class="m-4" action="/" method="post">
+                <div class="form-group">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+                </div>
+                <div class="form-group">
+                    <textarea class="textarea col-12" class="form-control" rows="7" placeholder="Mensaje" id="mensaje"
+                        name="mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary col-12">Submit</button>
+            </form>
+            <p>{{message}}</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!--Formulario-->
+
+<!--BOTONERA REDES S-->
+<section>
+    <div class="fab-container">
+        <div class="fab shadow">
+            <div class="fab-content">
+                <span class="material-icons">support_agent</span>
+            </div>
+        </div>
+        <div class="sub-button shadow">
+            <a href="https://wa.link/mat9xp" target="_blank">
+                <span class="fa fa-whatsapp"></span>
+            </a>
+        </div>
+        <div class="sub-button shadow">
+            <a href="https://www.instagram.com/axelsequeiras/" target="_blank">
+                <span class="fa fa-instagram"></span>
+            </a>
+        </div>
+        <div class="sub-button shadow">
+            <a href="https://www.linkedin.com/in/axel-gaston-sequeira-sundberg-65739424a/" target="_blank">
+                <span class="fa fa-linkedin"></span>
+            </a>
+        </div>
+        <div class="sub-button shadow">
+            <a href="https://github.com/Agss10" target="_blank">
+                <span class="fa fa-github"></span>
+            </a>
+        </div>
+    </div>
+
+
+</section>
+
+<!--BOTONERA REDES S-->

@@ -1,0 +1,369 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body  {
+ background-color: black;
+  
+}
+.saludo {
+  width: 20rem;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.hola {
+  color: blue;
+  margin-left: 30px;
+}
+.bienvenido {
+  color: blue;
+  margin-left: 20px;
+ 
+}
+.ingresar {
+ margin-left: 20px;
+}
+
+.salir {
+  color:blue ;
+
+}
+/*NAVBAR*/
+.navbar {
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  
+}
+
+/*NAVBAR*/
+
+h1 , h2{
+    font-family: 'Alfa Slab One' , cursive;
+    color: white;
+
+}
+.hero   {
+    background:url(../images/logo\ axel.png) ;
+    background-color:  rgba(0, 0, 0, 0.801);
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+   
+}
+
+/*DESCARGAR CV*/
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 50px;
+  height: 50px;
+  width: 150px;
+  margin-left: 620px;
+}
+.imgdescarga  {
+  margin-left: 5px;
+}
+.boton:hover  {
+  background-color: blue;
+}
+/*DESCARGAR CV*/
+
+
+/*SKILLS*/
+
+.textskills {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Alfa Slab One' , cursive;
+}
+
+.cards-skills {
+  width: 200px;
+  height: 250px;
+  perspective: 800px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.card_inner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.cards-skills:hover .card_inner {
+  transform: rotateY(-180deg);
+}
+.card_side  {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 180px 1fr ;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card_side--back  {
+  transform: rotateY(-180deg);
+}
+.card_image  {
+  width: 200px;
+  height: 250px;
+
+}
+
+.card_title {
+  text-align:left;
+  font-size: 25px;
+  margin-top: 1px;
+  color: black;
+}
+
+.card_body  {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+/*SKILLS*/
+
+
+
+/*CARDS*/
+.card-titlewp {
+  text-align: center;
+}
+
+.card-titlemail {
+  text-align: center;
+}
+.card-textform  {
+  text-align: center;
+}
+
+/*CARDS*/
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.container-contact  {
+  margin-top: 50px;
+}
+
+/*BOTONERA WPP FORMULARIO*/
+
+
+
+/*BOTONERA DE REDES S*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+  }
+  .fab-container:hover {
+    height: 100%;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-80px);
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-140px);
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-200px);
+  }
+  .fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-260px);
+  }
+  .fab-container:hover .sub-button:nth-child(6) {
+    transform: translateY(-320px);
+  }
+  .fab-container .fab {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    background-color: inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+  }
+  .fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .fab-container .fab .fab-content .material-icons {
+    color: white;
+    font-size: 48px;
+  }
+  .fab-container .sub-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .fab-container .sub-button:hover {
+    cursor: pointer;
+  }
+  .fab-container .sub-button .material-icons {
+    color: white;
+    padding-top: 6px;
+  }
+/*BOTONERA DE REDES S*/
+
+
+
+
+
+
+/*SNACKBAR*/
+ .notificacion  {
+  margin-left: 30px;
+  margin-top: 0px;
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+  height: 400px;
+  width: 200px;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  text-shadow: black;
+  box-shadow: 0 1px 10px rgb(red, green, blue);
+  transform: translateY( 30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 10s linear ;
+ }
+ .notificacion-body  {
+  font-size: medium;
+  display: block;
+  flex-direction: row;
+  padding: 16px 8px;
+ }
+ .notificacion_progress {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  width: calc(100% - 8px);
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient( to right, black, blue);
+  border-radius: inherit;
+  animation: progress 4.5s 0.4s linear;
+ }
+ .hand_icon {
+  height: 130px;
+  width: 130px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 10px;
+
+ }
+  @keyframes fade-in    {
+    5%{ opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    95% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@keyframes progress {
+  to  {
+    transform: scaleX(1);
+  }
+}
+/*SNACKBAR*/
+
+/*FOOTER*/
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer_conteiner {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 15px;
+}
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+                   minmax(200px , 1fr)  );
+  row-gap: 20px;
+}
+.title {
+  margin-left: 50px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer_list  {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_list-link {
+  transition: color 0.25s;
+}
+.footer_list-link:hover {
+  color: #fff;
+}
+.footer_dividor {
+  margin-block: 25px;
+  border: none;
+  border-top: 1px solid
+  rgba(252, 255 , 255 , 0.1);
+}
+.copyright  {
+  text-align: center;
+}
+
+/*FOOTER*/
